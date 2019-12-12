@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+.navbar {
+    background-color: #7b09e6;
+    margin-bottom: 3rem !important;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    color: #131414 !important;
+    font-family: 'Bebas Neue', sans-serif, cursive;
+}
+
+.logotype {
+    font-size: 4rem;
+    color: #faf9f9e7;
+}
+
+.optional {
+    font-size: 0.8rem;
+}
+
+.textarea-resize {
+    resize: none;
+}
+
+#sign-btn {
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: #1f1c1c;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif, cursive;
+}
+
+.footer {
+    width: 100vw;
+    height: 8rem;
+    margin-top: 3rem;
+    background-color: #7b09e6;
+}

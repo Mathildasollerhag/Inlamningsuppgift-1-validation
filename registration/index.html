@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/9272ac0a4d.js"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark mb-3">
+        <div class="container">
+            <i class="far fa-envelope-open logotype mr-3"></i>
+            <span class="navbar-brand mb-0 h1 mr-auto mt-3">Join our newsletter</span>
+        </div>
+    </nav>
+    <div class="container">
+        <form id="regForm">
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    <div class="invalid-feedback">
+                        Please provide your first name. 
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    <div class="invalid-feedback">
+                        Please provide your last name.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <div class="invalid-feedback">
+                        Please provide your street address.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control" id="zipCode" placeholder="Zip">
+                    <div class="invalid-feedback">
+                        Please provide a valid zip code (five digits).
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <div class="invalid-feedback">
+                        Please provide a valid email adress.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone">
+                    <div class="invalid-feedback">
+                        Please provide a valid phone number (digits only).
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <select class="custom-select" id="selectList">
+                        <option selected disabled value="">Subscription frequency</option>
+                        <option value="">Weekly</option>
+                        <option value="">Monthly</option>
+                        <option value="">Annually</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select how often you would like to recieve our newsletter.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="mb-3 h6">How old are you?</div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">0-29 years</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">30-49 years</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio3">50-100+ years</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="d-flex">
+                    <label for="formControlTextarea" class="h6">Ask us anything!</label>
+                    <p class="optional ml-2">(Maximum 200 characters)</p>
+                </div>
+                <textarea class="form-control textarea-resize" id="textArea" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox">
+                    <label class="form-check-label" for="checkbox">
+                        I agree to terms and conditions.
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before register.
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit" id="sign-btn">Sign me up!</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer"></footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

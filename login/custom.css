@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #7b09e6 !important; 
+}
+
+.navbar-brand {
+    color: #1b1a1a !important;
+    font-size: 3rem;
+    
+}
+
+#log-btn {
+    background-color: #1a1818;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem 3rem 1rem 3rem;
+    font-weight: 600;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info mb-3">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">LogIn</span>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="col-md-6" id="regForm" action="welcome.html">
+            <div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    <div class="invalid-feedback">Please enter your email adress. New user? Register first!</div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password" autocomplete="off">
+                    <div class="invalid-feedback">You must enter the correct password.</div>
+                </div>
+                <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" id="checkBox1">
+                    <label class="form-check-label mr-5">Save my password</label>
+                    <small><span><a href="#">New user? Register here!</a></span></small>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="log-btn">Log In</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
