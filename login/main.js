@@ -17,13 +17,13 @@ $(function() {
         validateInfo(id);
     });
 
-    function validateEmail (id) {
+    function validateEmail(id) {
         let emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if ($(id).val().match(emailRegEx)){ 
              $(id).addClass('is-valid');
              return true
-        } else{
+        } else {
             $(id).removeClass('is-valid');
             $(id).addClass('is-invalid');
             return false
@@ -35,7 +35,7 @@ $(function() {
         validateEmail(id);  
     });
 
-    function validatePassword (id) {
+    function validatePassword(id) {
         if ($(id).val().length < 5){ 
              $(id).addClass('is-invalid');
              return false

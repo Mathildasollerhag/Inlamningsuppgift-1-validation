@@ -5,6 +5,8 @@ $(function() {
     function validateInfo(id) {
         if ($(id).val() === '') {
             $(id).addClass('is-invalid');
+            $(id).removeClass('is-valid');
+            $(id).focus();
             return false
         } else {
             $(id).removeClass('is-invalid');
@@ -21,13 +23,13 @@ $(function() {
 
     // VALIDERING AV EMAIL (MÅSTE SKRIVAS "lorem@ipsum.com")
 
-    function validateEmail (id) {
+    function validateEmail(id) {
         let emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if ($(id).val().match(emailRegEx)){ 
              $(id).addClass('is-valid');
              return true
-        } else{
+        } else {
             $(id).removeClass('is-valid');
             $(id).addClass('is-invalid');
             return false
@@ -45,6 +47,7 @@ $(function() {
     function validateZip(id) {
         if ($(id).val().length === 5){
             $(id).addClass('is-valid');
+            $(id).removeClass('is-invalid');
             return true
         } else {
             $(id).removeClass('is-valid');
@@ -182,9 +185,9 @@ $(function() {
         }
     }
 
-    $('input').blur(function(e) {
+    $('#textArea').blur(function(e) {
         let id = "#" + e.currentTarget.id
-        validateTextEmpty(id);
+        validateTextEmpty('#textArea');
     });
 
 
@@ -223,19 +226,6 @@ $(function() {
             
         }
         
-
-        
-    // $('#regForm').submit((e) => {
-    //     e.preventDefault();
-        
-    //     if (validateInfo('#email') && validateInfo('#inputPassword') && validateEmail('#email') && validatePassword('#inputPassword')){
-    //         window.location = 'welcome.html'
-    //     } else {
-    //         return false
-    //     }
-    // });
-
-
       
     });
 
